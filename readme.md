@@ -15,6 +15,9 @@ The previous version used a 1A LDO which was too little for three motors. This u
 The power switching system has been significantly simplified, using a physical switch to alternate between battery power and USB power. There is no integrated battery charging since the robot is designed to use 8xAA (12V) instead of a 3.7V LiPo. 
 Has an extra button to calibrate and start the robot because it may be easier than resetting. can be used to toggle on/off instead of robot running every time code uploads. 
 
+## Known Issues
+The current revision of the board lacks I2C pull up resistors, and so the sensors don't work. If you plan on making this project, please add those pull ups!
+
 ## Images
 
 ![sch](https://github.com/Omegon0/robotbrain/blob/main/sch.jpg?raw=true)
